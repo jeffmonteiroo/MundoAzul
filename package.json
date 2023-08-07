@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^12.10.0",
+    "faker-br": "^0.4.1",
+    "gerador-validador-cpf": "^5.0.2"
+  },
+  "devDependencies": {
+    "mssql": "^9.1.1"
+  }
+}
