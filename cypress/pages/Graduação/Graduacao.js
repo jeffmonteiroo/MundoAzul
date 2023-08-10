@@ -2,7 +2,7 @@
 class Graduacao {
 
     CurricularizacaoExtensao(){
-        cy.contains('Curricularização da Extensão').click()    
+        cy.contains('Curricularização da Extensão', { timeout: 20000 }).click()    
     }
   }
   

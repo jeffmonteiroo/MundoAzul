@@ -3,5 +3,6 @@ cypress/fixtures/login.json
 cypress.env.json
 cypress/screenshots/
 cypress/videos/
+cypress/reports/
 node_modules/
 temp/

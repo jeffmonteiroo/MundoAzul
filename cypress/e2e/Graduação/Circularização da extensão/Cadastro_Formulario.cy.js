@@ -1,16 +1,16 @@
 import Loginpage from "../../../pages/Loginpage"
 import HomePage from "../../../pages/HomePage"
-import Formularios from "../../../pages/Formularios"
-import Graduacao from "../../../pages/Graduacao"
-import CurricularizacaoExtensao from "../../../pages/Curricularizacao-extensao"
-import CadastroFormulario from "../../../pages/CadastroFormulario"
+import Graduacao from "../../../pages/Graduação/Graduacao"
+import CurricularizacaoExtensao from "../../../pages/Graduação/Curricularização da extensao/Hub"
+import CadastroFormulario from "../../../pages/Graduação/Curricularização da extensao/CadastroFormulario"
+
 
 describe('Cadastro Formulario', () => {
   it('Cadastrar Formulário', () => {
-    Loginpage.jeffMonteiro()
+    Loginpage.usuario_perfil_completo()
     HomePage.Graduacao()
     Graduacao.CurricularizacaoExtensao()
-    CurricularizacaoExtensao.CadastroFormulario()
+    CurricularizacaoExtensao.CadFormulario()
     CadastroFormulario.CliqueCadForm()
     CadastroFormulario.FormularioTeste()
   })

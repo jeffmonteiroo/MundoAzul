@@ -55,24 +55,23 @@ class AccessControl{
     }
 
     SalvarCadastro(){
-        cy.contains('Salvar').click();
-        cy.wait(2000)
+        cy.contains('Salvar', { timeout: 40000 }).click();
     }
     ContinuarEditando(){
-        cy.get('#dialog-confirm-button').click();
-        cy.wait(2000)
+        cy.get('#dialog-confirm-button', { timeout: 40000 }).click();
+       
     }
     IrParaPerfil(){
-        cy.get('#mat-tab-label-0-1 > .mat-tab-label-content').click();
-        cy.wait(2000)
+        cy.get('#mat-tab-label-0-1 > .mat-tab-label-content', { timeout: 40000 }).click();
+        
     }
     PesquisaPorPerfil(){
-        cy.get('#search-value').type('Perfil Completo')
+        cy.get('#search-value').type('Perfil Completo', { timeout: 40000 })
         cy.get('#button-search > .mat-button-wrapper > .mat-icon').click()
     }
     AtivarPerfil(){
-        cy.get('label[for="mat-slide-toggle-14-input"]').click();
-        cy.get('.mat-simple-snackbar > :nth-child(1)').should('have.text','Registro criado com sucesso')
+        cy.get('#mat-slide-toggle-14 > .mat-slide-toggle-label > .mat-slide-toggle-bar > .mat-slide-toggle-thumb-container > .mat-slide-toggle-thumb')
+        cy.get('.mat-simple-snackbar > :nth-child(1)').should('have.text','Registro criado com sucesso',  { timeout: 40000 })
     }
 }
 

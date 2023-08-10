@@ -9,28 +9,14 @@ class HomePage {
         cy.contains('Comum').click()   
     }
     ControleAcesso(){
-        cy.wait(5000)
-        cy.contains('Controle Acesso').click()   
+        cy.contains('Controle Acesso',{ timeout: 50000 }).click()   
     }
     GestaoRedePolo(){
-        cy.contains('Gestao Rede/Polo').click()   
+        cy.contains('Gestao Rede/Polo',{ timeout: 40000 }).click()   
     }
     Graduacao(){
-        cy.contains('Graduação').click()   
+        cy.contains('Graduação', { timeout: 40000 }).click()   
     }
-    CurricularizacaoExtensao(){
-        cy.contains('Graduação').click() 
-        cy.contains('Curricularização da Extensão').click()    
-    }
-    
-    CadastroFormulario(){
-        cy.contains('Graduação').click()
-        cy.wait(2000)
-        cy.contains('Curricularização da Extensão').should('be.visible').click() 
-        cy.wait(5000)
-        cy.contains('Cadastro de Formulários').should('be.visible').click()    
-    }
-
     
   }
   
