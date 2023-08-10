@@ -18,7 +18,5 @@ module.exports = defineConfig({
       "test": "cypress run",
       "report": "npx mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochawesome.json && npx marge cypress/reports/mochawesome.json -f report -o cypress/reports"
     }
-    
-
   },
 });
