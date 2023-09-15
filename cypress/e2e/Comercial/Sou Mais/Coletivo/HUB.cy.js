@@ -1,11 +1,13 @@
-import Loginpage from "../../../../pages/Loginpage";
+import Loginpage from "../../../../pages/LoginPage"
+import HomePage from "../../pages/HomePage"
 import ComercialPage from "../../../../pages/Comercial/ComercialPage";
 import HubPage from "../../../../pages/Comercial/SouMais/Coletivo/HubPage.js";
 
 describe('Validar a tela de HUB - SOU MAIS - COLETIVO', () => {
 
   beforeEach(() => {
-    Loginpage.usuario_perfil_completo();
+    Loginpage.LoginUser();
+    Loginpage.Perfil_Completo();
     ComercialPage.Coletivo();
   });
 
