@@ -17,6 +17,18 @@ class HomePage {
     Graduacao(){
         cy.contains('Graduação', { timeout: 40000 }).click()   
     }
+
+    Comercial(){
+        cy.contains('Comercial',{ timeout: 50000 }).click()   
+    }
+    SouMais(){
+        cy.contains('SM',{ timeout: 50000 }).click()   
+    }
+    Individual(){
+        cy.contains('Individual',{ timeout: 50000 }).click()   
+    }
+
+
     
   }
   

@@ -15,9 +15,9 @@ class CadModalidadeSubModalidade {
 
     FormularioSubModalidade(){  
         cy.get('input[id="mat-input-5"]').should('be.visible').type('Teste Submodalide');
-        cy.get('##mat-input-6').type('Descrição submodalidade');
-        cy.get('#mat-input-7').type(10);
-        cy.get('#mat-input-8').type(50);
+        cy.get('input[id="mat-input-6"]').type('Descrição submodalidade');
+        cy.get('input[id="mat-input-7"]').type(10);
+        cy.get('input[id="mat-input-8"]').type(50);
        // cy.get('.mat-form-field-infix.ng-tns-c92-26').click(); 
     }
 }
