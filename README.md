@@ -20,6 +20,10 @@ To install the dev dependencies, run `npm install` (or `npm i` for short.)
 
 ## Configuring the environment variables
 
+Copy `cypress.env.example.json` to `cypress.env.json` and set the authorized
+test credential. The local file is ignored by Git. In CI, use
+`CYPRESS_MUNDO_AZUL_BASIC_AUTH`.
+
 In the fixtures folder, create a login.json file so you can access the portal.
 Example:
 
@@ -38,4 +42,3 @@ You can use the command:
 ___
 
 Made with ❤️ by [Jeff Monteiro]().
-

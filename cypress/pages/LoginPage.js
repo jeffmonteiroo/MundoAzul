@@ -4,6 +4,14 @@
 class Login {
 
 LoginUser() {
+  const basicAuth = Cypress.env('MUNDO_AZUL_BASIC_AUTH');
+
+  if (!basicAuth) {
+    throw new Error(
+      'Defina MUNDO_AZUL_BASIC_AUTH em cypress.env.json ou na variável de ambiente CYPRESS_MUNDO_AZUL_BASIC_AUTH.'
+    );
+  }
+
   cy.fixture('login.json').then((loginData) => {
     cy.visit('/auth');
     cy.get('#loginUsuario input').type(loginData.username, { force: true });
@@ -18,7 +26,7 @@ LoginUser() {
       headers: {
         'Accept': '*/*',
         'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
-        'Authorization': 'Basic REDACTED_BASIC_AUTH==',
+        'Authorization': `Basic ${basicAuth}`,
         'Content-Type': 'application/x-www-form-urlencoded',
         'Origin': 'https://mundoazul-dev.unicesumar.edu.br',
         'Referer': 'https://mundoazul-dev.unicesumar.edu.br/',
@@ -77,4 +85,3 @@ Perfil_Completo() {
   }
  
  export default new Login();
- 
