@@ -18,9 +18,3 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-
-
-module.exports = (on, config) => {
-  // Use cypress-multi-reporters to generate multiple reports
-  on('task', initPlugin(config));
-};
