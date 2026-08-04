@@ -5,14 +5,9 @@
     "gerador-validador-cpf": "^5.0.2"
   },
   "devDependencies": {
-    "cypress": "^15.19.0",
-    "cypress-mochawesome-reporter": "^5.0.0",
-    "mochawesome": "^8.0.1",
-    "mochawesome-merge": "^5.1.1",
-    "mochawesome-report-generator": "^6.3.2"
+    "cypress": "^15.19.0"
   },
   "scripts": {
-    "test": "cypress run",
-    "report": "npx mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochawesome.json && npx marge cypress/reports/mochawesome.json -f report -o cypress/reports"
+    "test": "cypress run"
   }
 }
