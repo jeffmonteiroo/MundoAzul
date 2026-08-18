@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@faker-js/faker": "^8.0.2",
+    "@faker-js/faker": "^10.6.0",
     "faker-br": "^0.4.1",
     "gerador-validador-cpf": "^5.0.2"
   },
